@@ -1,0 +1,563 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*=========HEADER=======*/
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 10%; /*14%*/
+  background: white;
+  transition: all 0.5s ease;
+}
+.logo img{
+  padding: 6px;
+}
+
+/*======================Bar navigation===================*/
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 22px;
+  transition: all 0.50s ease;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #e23f3f;
+  border-bottom: rgb(255, 0, 238);
+  transform: translateY(-4px);
+}
+
+/*===========Icons d'achat========*/
+.hi-icons{
+  display: flex;
+  align-items: center;
+}
+.hi-icons i{
+  font-size: 20px;
+  color: #222352;
+  margin-left: 5px;
+  margin-right: 20px;
+  transition: all 0.50s ease;
+
+}
+.hi-icons i:hover{
+  transform: translateY(-4px);
+  color: #8f17c7;
+}
+#menu-icon{
+  height: 20px;
+  width: 30px;
+  /* background: #222352; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+section{
+  padding: 60px 14% 70px; /*A modifier*/
+  background: white;
+}
+.acceuil{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/rose3.jpg);
+  background-size: cover; /*IMPORTANT*/
+  display: flex;
+  background-position: center;
+  align-items: center;
+  justify-content: flex-start;  /*IMPORTANT*/
+}
+.acceuil-text h1{
+  font-family: 'Leckerli One', cursive;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+.acceuil-text  p{
+  line-height: 23px;
+  margin-bottom: 30px;
+
+}
+.acceuil-text  .bouton{
+  padding: 16px 30px;
+  background: #222352;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.acceuil-text  .bouton:hover{
+  background: #456;
+}
+/*--========== Banniere Section =========================-*/
+
+.banner{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.5em;
+}
+.banner-img{
+  overflow: hidden;
+}
+.banner-img img{
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.banner-img:hover img{
+  transform: scale(1.1);
+}
+
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+.carousel-caption {
+    width: 60%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+    padding-bottom: 12px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+/*<!--========== New Product =========================--*/
+
+.text-centre{
+  /* text-align: center; */
+  font-size: 20px;
+  font-weight: 800;
+  color: #222352;
+}
+.text-centre h2{
+  border-bottom: 2px solid orangered;
+  width: 180px;
+}
+.new-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+  margin-top: 4rem;
+
+}
+.row{
+  position: relative;
+  cursor: pointer;
+}
+/* .new-content img{
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+} */
+
+.row img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.row h4{
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 400;
+  transition: transform 0.5s ease;
+}
+.row h4:hover{
+  color: rgb(0, 53, 138);
+}
+.row h5{
+  color: rgb(0, 53, 138);
+  font-weight: 600;
+}
+.top{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  height: 30px;
+  width: 40px;
+  background: rgb(227, 108, 4);
+  color: aliceblue;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.row .bbtn a{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  /* width: 80%; */
+  align-items: center;
+  text-align: center;
+  background: rgb(0, 5, 6);
+  color: rgb(255, 252, 252);
+  transition: opacite 0.5s ease;
+  opacity: 0;
+  text-decoration: none;
+}
+.row:hover .bbtn a{
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+
+/* Services Section Start */
+.services{
+  padding: 30px 5% 120px;
+}
+.services .heading{
+  text-align: center;
+}
+.services .heading h3{
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1a0132;
+}
+.services .card-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+  align-items: center;
+  gap: 3rem;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.services .card-content .row{
+  background: #ffffff;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.services .row i{
+  color: rgb(224, 92, 92);
+  font-size: 30px;
+  padding: 10px;
+  display: block;
+}
+.services .card-body h3{
+  color: #030303;
+  font-size: 20px;
+  display: inline-flex;
+}
+.services .card-body p{
+  color: #000000;
+}
+@media (max-width:920px){
+  .services .card-content{
+      grid-template-columns: 1fr;
+  }
+}
+/* Services Section End */
+
+
+
+/*LE STYLE FOOTER 
+==========================================================*/
+
+/* _________________FOOTER________________________ */
+
+footer{
+  width: 100%;
+  position: relative;  /*La postion est à revoir */
+  bottom: 0;
+  background: #ededed;
+  color: #191818;
+  padding: 100px 0 30px;
+  border-top-left-radius: 20px; /*LE border raduis à gauche de backgroun de footer*/
+  line-height: 20px; 
+  font-size: 13px;
+}
+.ligne{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+  font-size: 16px; 
+}
+
+.col:nth-child(2), .col:nth-child(3){
+  flex-basis: 15%;
+}
+/*Le style ddu logo*/
+.logo{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  color: black;
+}
+h3{
+  color: black;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #513535;
+  margin: 20px 0;
+}
+
+ul li{
+  margin-bottom: 10px;
+}
+ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  font-size: 19px;
+}
+
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 50px;
+}
+
+form .far{
+  font-size: 25px;
+  margin-right: 10px; /*A revoir la marche droite de la classe form*/
+}
+form input{
+  width: 100%;
+  height: 30%;
+  background: transparent;
+  color: black;
+  border: 0;
+  outline: none;
+}
+
+form button{
+  background: transparent;
+  color: #181818;
+  border: 0;
+  outline: none;
+  background:#e23f3f;
+  border-radius: 7px;
+  width: 100px;
+  padding: 10px 10px;
+}
+form button:hover{
+  background:#2954acd0;
+}
+form button .fas{
+  font-size: 25px;
+}
+
+/* Mes réseaux sociaux */
+
+.reseaux-sociaux .fab{
+  width: 38px;
+  height: 4px;
+  /* border-radius: 50%; */
+  text-align: center;
+  line-height: 4px;
+  color: #060505;
+  margin-right: 15px;
+  font-size: 25px;
+  border: none;
+}
+.fab:hover{
+  color: rgba(0, 0, 255, 0.703);
+  cursor: pointer;
+}
+
+/*TOus droits reservés en pied de passe*/
+hr{
+  width: 90%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #0e0c0c;
+}
+.copyright{
+  text-align: center;
+}
+
+/*La ligne en dessous de chacun de nos h3 de notre footer*/
+.underline{
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span{
+  width: 23px;
+  height: 90%;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: bardessous 3s linear infinite ;
+}
+
+/* @keyframes bardessous {
+  0%{
+      left: -20px;
+  }
+  100%{
+      left: 100%;
+  }
+} */
+
+/*MEdia query pour l'adaptation aux petits écrans*/
+@media (max-width: 700px) {
+  footer{
+      bottom: unset;
+  }
+  .col{
+      flex-basis: 100%;
+      font-size: 14px;
+  }
+  
+  .col:nth-child(2), .col:nth-child(3){
+      flex-basis: 10%;
+  }
+  
+}
+
+
+/* ____________________FIN__STYLE____FOOTER________________________ */
+
+/*MEDIA QUERY
+==========================================================*/
+
+@media (max-width:1200px){
+  header{
+    padding: 12px 3%;
+  }
+  section{
+    padding: 40px 3% 50px;
+  }
+}
+
+@media (max-width:450px){
+.logo img{
+  width: 90%;
+  height: 90%;
+  padding-top: 20px;
+}
+}
+
+@media (max-width:900px) {
+  #menu-icon{
+    display: block;
+    height: 20px;
+    width: 30px;
+    /* background: #222352; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .navbar{
+    position: absolute;
+    top: -800px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    transition: all 0.50s ease;
+  }
+  .navbar a{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.50s ease;
+  }
+  .navbar a:hover{
+    color: #222352;
+  }
+  .navbar.active{
+    top: 100%;
+  }
+}
+
+@media (max-width:640px){
+  .acceuil-text h1{
+    line-height: 1.1;
+    margin-top: 60px;
+  }
+  .acceuil{
+    height: 85vh;
+  }
+  }

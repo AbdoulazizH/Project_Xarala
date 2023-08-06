@@ -1,0 +1,386 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoop Web site</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="projet 2.css">
+</head>
+<body>
+  
+<!--========== HEADER Section
+=========================-->
+<header>
+  <a href="#" class="logo">
+    <img src="images/logo.png" alt="">
+  </a>
+
+  <ul class="navbar">
+    <li><a href="#">Acceuil</a></li>
+    <li><a href="#">Apropos</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <div class="hi-icons">
+    <a href="#"><i class='bx bx-shopping-bag'></i></a>
+    <a href="#"><i class='bx bx-heart'></i></a>
+    <!---Bar de navigation pour les petits ecrans-->
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </div>
+</header>
+
+
+<!--========== Acceuil Section =========================-->
+
+<section class="acceuil">
+  <div class="acceuil-text">
+    <h1> Bienvenue <br>sur Horor-Shop</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Quam quibusdam doloremque sit accusantium. 
+    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, accusamus. <br>Itaque aliquam ex dolorem maxime veniam, eveniet perferendis?</p>
+    <a href="#" class="bouton">Produits</a>
+  </div>
+</section>
+
+<!--========== Banniere Section =========================-->
+
+<section class="banner">
+  <div class="banner-img">
+    <img src="images/1-1.jpg" alt="">
+  </div>
+
+  <div class="banner-img">
+    <img src="images/1-2.jpg" alt="">
+  </div>
+
+</section>
+
+<!--========== New Product =========================-->
+
+<section class="new product">
+  <div class="text-centre">
+    <h2>New Products</h2>
+  </div>
+
+  <div class="new-content">
+    <div class="row">
+      <img src="images/offer.jpg" alt="">
+      <h4>Nouveau Produit</h4>
+      <h5>$18.88</h5>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/main1.png" alt="">
+      <h4>Nouveau Produit</h4>
+      <h5>$67.99</h5>
+
+      <div class="top">
+        <p>New</p>
+      </div>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/main2.png" alt="">
+      <h4>Nouveau Produit</h4>
+      <h5>$89.00</h5>
+
+      <div class="top">
+        <p>SALE</p>
+      </div>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/rose1.jpg" alt="">
+      <h4>Rose 3</h4>
+      <h5>$18.88</h5>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/blog1.jpg" alt="">
+      <h4>Fleur</h4>
+      <h5>$60.00</h5>
+
+      <div class="top">
+        <p>SALE</p>
+      </div>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/blog2.jpg" alt="">
+      <h4>New product</h4>
+      <h5>$18.88</h5>
+
+      <div class="top">
+        <p>Hot</p>
+      </div>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/blog3.jpg" alt="">
+      <h4>Nouveau Produit</h4>
+      <h5>$20.18</h5>
+
+      <div class="top">
+        <p>Drap</p>
+      </div>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="images/rose2.jpg" alt="">
+      <h4>Rose </h4>
+      <h5>$20.18</h5>
+
+      <div class="top">
+        <p>30%</p>
+      </div>
+      <div class="bbtn">
+        <a href="#">Ajouter au panier</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--==========  FIN New Product =========================-->
+
+
+<!-- Flickity HTML init -->
+<!-- <div id="slider" style="text-align: center;">
+  <figure style="text-align: center;">
+    <img src="images/1-1.jpg" alt style="text-align: center;">
+    <img src="images/1-2.jpg" alt>
+    <img src="images/1-3.jpg" alt>
+    <img src="images/1-1.jpg" alt>
+    <img src="images/1-3.jpg" alt>
+    <p>.</p>
+  </figure>
+</div>
+<style>
+  div#slider {text-align: center; width: 80%; max-width: 1000px; }
+  div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  animation: 30s slidy infinite;
+}
+div#slider figure img { width: 20%; height: 60%; float: left;text-align: center; align-items: center; }
+div#slider { width: 80%; max-width: 1000px; overflow: hidden;text-align: center; }
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+</style> -->
+
+
+<!-----============Banniere Carousel
+    ================================================-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/bouquet6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Les meilleurs fleurs roses 🌹</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quibusdam.</p>
+              <p><a href="" class="btn btn-warning mt3"> Voir plus</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/bouquet3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Fleurs d'Ethiopie 💐</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum iusto, iste doloremque officia. </p>
+            <p><a href="" class="btn btn-warning mt3">En Savoir Plus</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/bouquet4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Fleurs 🪷</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit dicta perspiciatis sint excepturi harum? </p>
+            <p><a href="" class="btn btn-warning mt3"> Apprendre plus</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Precedent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+
+
+
+<!--==========DEBUT======= Services Section===========-->
+<section class="services" id="services">
+  <div class="heading">
+      <h3>Services</h3>
+  </div>
+      <div class="card-content">
+
+          <div class="row">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                  <h3>Free shipping</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero suscipit eos quam explicabo quas.</p>
+              </div>
+          </div>
+          <div class="row">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                  <h3>Voyage le plus rapide</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero suscipit eos quam explicabo quas.</p>
+
+              </div>
+          </div>
+          <div class="row">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                  <h3>Hôtels abordables</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero suscipit eos quam explicabo quas.</p>
+
+              </div>
+          </div>
+          <div class="row">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                  <h3>Guide de sécurité</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero suscipit eos quam explicabo quas.</p>
+              </div>
+          </div>
+      </div>
+</section>
+
+<!-- =================FIN ====Services Section ========== -->
+
+
+<!--========== Banniere Section 2=========================-->
+
+<section class="banner">
+  <div class="banner-img">
+    <img src="images/1-3.jpg" alt="">
+  </div>
+
+  <div class="banner-img">
+    <img src="images/1-1.jpg" alt="">
+  </div>
+
+</section>
+
+
+
+
+
+
+<!-- <section class="banner">
+  <h1>SERVICES</h1>
+  <div class="banner-img">
+    <h1>Produit2 </h1>
+    <i class="fa-solid fa-network-wired"></i>
+  </div>
+
+  <div class="banner-img">
+    <h2>Produit 2</h2>
+    <img src="images/blog1.jpg" alt="">
+    <i class="fa-solid fa-code-compare"></i>
+  </div>
+
+  <div class="banner-img">
+    <img src="images/blog1.jpg" alt="">
+  <i class="fa-solid fa-laptop-code"></i>
+</div>
+
+</section> -->
+
+
+
+
+
+    <!---_____________________FOOTER_______________________-->
+
+    <footer>
+      <div class="ligne">
+          <div class="col">
+              <img src="images/logo.png" alt="Logo" class="logo">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="col">
+              <h3>Addresse <div class="underline"><span></span></div></h3>
+              <p>Avenue Cheikh Anta Diop</p>
+              <p>Dakar, Sénégal SN</p>
+              <p class="email-id">abdoul.sitezero@gmail.com</p>
+          </div>
+          <div class="col">
+              <h3>Liens <div class="underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="#">Acceuil</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Blog</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <h3>Newsletter <div class="underline"><span></span></div> </h3>
+              <form action="">
+                  <i class="far fa-envelope"></i>
+                  <input type="email" placeholder="Entrez votre e-mail" required>
+                  <button type="submit">Inscrivez</button>
+              </form>
+              <div class="reseaux-sociaux">
+                <a href=""> <i class="fab fa-facebook"></i> </a>
+                <a href=""> <i class="fab fa-linkedin"></i> </a>
+                <a href=""> <i class="fab fa-twitter"></i> </a>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright"> Abdel-aziz Harane &copy; 2023</p>
+  </footer>
+   <!---________________FIN_____FOOTER_______________________-->
+
+
+
+   <script src="projet2.js"></script>
+
+</body>
+</html>
