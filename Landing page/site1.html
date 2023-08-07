@@ -1,0 +1,415 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="site1.css">
+    <title>Landing page boostrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    
+    <!-----============NAVBAR : Header
+    ================================================-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container">
+            <!---Le logo du site-- <img src="logo.png" alt="">-->
+          <a class="navbar-brand" href="#"><span class="text-warning">AFRICA</span>Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#" tabindex="-6" >Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-6">Blog</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Rechercher</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-----============Banniere Carousel
+    ================================================-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Turkey.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Visiter la Turquie 🌛🌥️</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quibusdam.</p>
+                <p><a href="" class="btn btn-warning mt3"> Apprendre plus</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/jordan.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>Voyager vers la Jordanie 🛳️</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum iusto, iste doloremque officia. </p>
+              <p><a href="" class="btn btn-warning mt3">En Savoir Plus</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Mexico.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Egypthe 💥↗️</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit dicta perspiciatis sint excepturi harum? </p>
+              <p><a href="" class="btn btn-warning mt3"> Apprendre plus</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Precedent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+
+
+      
+    <!-----============Section services
+    ================================================-->
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-image">
+                        <img src="images/book-img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>Voyager à travers le monde<br>En un clic !</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime distinctio labore? Repellat. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime distinctio labore? Repellat.</p>
+                        <a href="" class="btn btn-warning">Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----============Section nouveaux services
+    ================================================-->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Les services offerts</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, modi quos corporis dignissimos eos quidem numquam aliquam voluptatibus accusamus temporibus in? Quas repudiandae quibusdam eius delectus illo explicabo, dicta possimus.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                            <h3 class="card-title">Parcourir les 4 coins</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde suscipit, harum dolorum laudantium vero architecto eveniet reiciendis eos aperiam maiores nesciunt iste rem. Odit quia fugiat suscipit qui eveniet.</p>
+                            <button class="btn btn-warning text-dark">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <!--2 eme service--> 
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-rocket-takeoff"></i>
+                            <h3 class="card-title">Prenez le bateau</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde suscipit, harum dolorum laudantium vero architecto eveniet reiciendis eos aperiam maiores nesciunt iste rem. Odit quia fugiat suscipit qui eveniet.</p>
+                            <button class="btn btn-warning text-dark">Read more</button>
+                        </div>
+                    </div>
+                </div> 
+                 <!--3 eme service-->                
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-airplane-engines"></i>
+                            <h3 class="card-title">Prenez l'avion</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde suscipit, harum dolorum laudantium vero architecto eveniet reiciendis eos aperiam maiores nesciunt iste rem. Odit quia fugiat suscipit qui eveniet.</p>
+                            <button class="btn btn-warning text-dark">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-----============Section blog
+    ================================================-->
+        <section id="porfolio" class="porfolio section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-5">
+                            <h2>Quelques pays touristiques</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, modi quos corporis dignissimos eos quidem numquam aliquam voluptatibus accusamus temporibus in? Quas repudiandae quibusdam eius delectus illo explicabo, dicta possimus.</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center pg-white pb-2">
+                            <div class="card-body text-dark">
+                                <div class="img-area mb-4">
+                                    <img src="images/Italy.png" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Ile Maurice</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo veritatis sapiente officiis est cupiditate nulla quaerat eius ea. Aliquam amet sunt voluptatum, ipsa sit autem iste ut delectus exercitationem?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center pg-white pb-2">
+                            <div class="card-body text-dark">
+                                <div class="img-area mb-4">
+                                    <img src="images/Greece.png" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Maroc </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo veritatis sapiente officiis est cupiditate nulla quaerat eius ea. Aliquam amet sunt voluptatum, ipsa sit autem iste ut delectus exercitationem?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center pg-white pb-2">
+                            <div class="card-body text-dark">
+                                <div class="img-area mb-4">
+                                    <img src="images/jordan.png" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Jordanie </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo veritatis sapiente officiis est cupiditate nulla quaerat eius ea. Aliquam amet sunt voluptatum, ipsa sit autem iste ut delectus exercitationem?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-----============Section TEAM
+    ================================================-->
+
+    <div id="team" class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>TEAM</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, modi quos corporis dignissimos eos quidem numquam aliquam voluptatibus accusamus temporibus in? Quas repudiandae quibusdam eius delectus illo explicabo, dicta possimus.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pic-1.png" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">William Wilfried</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim omnis fuga autem.
+                        </p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pic-2.png" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Sara Sako</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim omnis fuga autem.
+                        </p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pic-3.png" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Bernard Fernand</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim omnis fuga autem.
+                        </p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pic-1.png" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Tatou Bali</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim omnis fuga autem.
+                        </p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+        <!-----============Section Accordion
+    ================================================--> 
+
+    <div class="container">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <h2 class="text-center mb-3">Questions fréquement posées</h2>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Est-ce que vous delivrez de visas ?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>La délivration de visas se fait au niveau de l'ambasade ou consulat.</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita mollitia sunt perspiciatis alias voluptas ipsa necessitatibus velit amet iste nulla? though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Combien Coute le voyage dans une ville touristique ?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Tot dépend de quel pays voulez-vous voyager.</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem a excepturi quaerat tempore quo, quis laudantium nostrum ab, aspernatur quidem, eligendi fuga neque?<code>.Voyage</code>,Lorem, ipsum.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Où se trouve votre agence ?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>AFRICATravel se trouve non loin de l'UCAD.</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perferendis recusandae odio reprehenderit corrupti cum, fugit fugiat, est accusamus sapiente corporis. Maxime quidem magni vel nam voluptatem recusandae magnam quod! <code>.Avenue Cheikh Anta Diop</code>,Lorem ipsum dolor sit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Quand avez-vous créée votre entreprise?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>AFRICATravel est créée en 2023.</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perferendis recusandae odio reprehenderit corrupti cum, fugit fugiat, est accusamus sapiente corporis. Maxime quidem magni vel nam voluptatem recusandae magnam quod! <code>.Avenue Cheikh Anta Diop</code>,Lorem ipsum dolor sit.
+              </div>
+            </div>
+          </div>
+      </div>   
+    </div>
+
+        <!-----============Section CONTACT
+    ================================================-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>CONTACT</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, modi quos corporis dignissimos eos quidem numquam aliquam voluptatibus accusamus temporibus in? Quas repudiandae quibusdam eius delectus illo explicabo, dicta possimus.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 p-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="text" name="" class="form-control" required placeholder="Votre nom">
+                            </div>
+                        </div> 
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="email" name="Mail" class="form-control" required placeholder="Votre e-mail">
+                            </div>
+                        </div> 
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea name="" id="" cols="5" class="form-control" placeholder="Vos préoccupations" ></textarea>
+                            </div>
+                        </div> 
+                        <button class="btn btn-warning btn-lg btn-blog mt-3 text-dark">ENVOYER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+ <!-----============FOOTER : PIED DE PAGE
+ ================================================-->       
+ 
+    <footer class="bg-dark p-3 text-center">
+        <div class="container">
+            <p class="text-white">Tous droits résevés &copy; Abdel-aziz Harane.</p>
+        </div>
+    </footer>
+</body>
+</html>
