@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#box1{
+    border : 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 21px;
+    background-color: antiquewhite;
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px; */
+    margin: 50%;
+
+}
+
+#box2{
+    border : 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 21px;
+    background-color: blueviolet;
+
+}
